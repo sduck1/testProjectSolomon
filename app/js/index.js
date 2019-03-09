@@ -30,3 +30,5 @@ function closeMenu() {
         element.classList.add('hide');
     });
 }
+
+

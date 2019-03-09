@@ -59,6 +59,65 @@ body {
   }
 }
 
+.customselect {
+  position: absolute;
+  top:84px;
+  right: 30px;
+    button {
+      outline: 0;
+      border: none;
+      width: 50px;
+      height: 14px;
+      color: #fff;
+      font-family: Roboto,sans-serif;
+      font-size: 14px;
+      text-transform: uppercase;
+      background: url(../img/Path_634.png) no-repeat;
+      background-size: auto;
+      background-position: right;
+      cursor: pointer;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 9px 0;
+      display: none;
+      position: absolute;
+      z-index: 1000;
+      background: white;
+      width: 82px;
+      box-sizing: border-box;
+      li {
+        text-align: center;
+        cursor: pointer;
+      }
+      @media @maxWidth1199min768 {
+        width:58px;
+      }
+      @media @maxWidth767 {
+        width:58px;
+      }
+    }
+  @media @maxWidth1199min768 {
+    right: 36px;
+    width: 40px;
+    height: 37px;
+    top: 103px;
+  }
+  @media @maxWidth767 {
+    right: 36px;
+    width: 40px;
+    height: 37px;
+    top: 103px;
+  }
+}
+
+.open {
+  ul {
+    display: block;
+  }
+}
+
 .hide {
   display: none;
 }
