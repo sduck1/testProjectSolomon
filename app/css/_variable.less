@@ -1,0 +1,49 @@
+@import "_font";
+
+@maxWidth767:~"only screen and (max-width: 767px)";
+@maxWidth1199min768:~"only screen and (min-width: 768px) and (max-width: 1199px)";
+@minWidth1500:~"only screen and (min-width: 1500px)";
+@minWidth1700:~"only screen and (min-width: 1700px)";
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.fontRegular {
+  font-family: 'Roboto',sans-serif;
+}
+
+.fontBlack {
+  font-family: 'RobotoBlack',sans-serif;
+}
+
+.fontBold {
+  font-family: 'RobotoBold',sans-serif;
+}
+
+.head {
+  color: #222222;
+  .fontBold;
+  font-size: 64px;
+  @media @maxWidth767 {
+    font-size: 48px;
+  }
+}
+
+.hr {
+  height: 1px;
+  background: #919191;
+}
+
+.clearFix {
+  &:after {
+    content: "";
+    clear: both;
+    float: none;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+}
